@@ -1,222 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-<!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="typed.js"></script>
+  </head>
+  <body>
 
-<!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <h1 class="type" id="couleur" style="color:#850606"></h1>
 
-      <link rel="stylesheet" type="text/css" href="general.css">
-      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Karma|Open+Sans|Open+Sans+Condensed:300|Roboto" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script type="text/javascript" src="typed.js"></script>
+    <script type="text/javascript">
 
-  <title>HOME</title>
-    </head>
+const test = () => {
+
+    const typed = new Typed(".type", {
+      strings: [
+        "Wild Code School",
+        "19h37",
+        "Personne dans les environs",
+        "Tu es venu bosser ton JS tranquille à cette heure-ci,",
+        "pour avoir une bonne connection et un peu de silence... ",
+        "...",
+        "du moins c'est ce que tu pensais...",
+        "Do you want to play a game ???"
+
+      ],
+      typeSpeed: 70,
+      backSpeed: 30,
+      smartbackspace: true,
+    })
+}
+const test2 = () => {
+
+  let theButton1 = document.createElement("input")
+  theButton1.setAttribute("type", "submit")
+  theButton1.setAttribute("name", "submit")
+  theButton1.setAttribute("value", "or Die! MAKE YOUR CHOICE!!(run away)")
+  theButton1.setAttribute("class", "button1")
+  theButton1.setAttribute("onclick", "location.href='BOUMBOUM.html'")
+  document.body.appendChild(theButton1)
+
+  let theButton2 = document.createElement("input")
+  theButton2.setAttribute("type", "submit")
+  theButton2.setAttribute("name", "submit")
+  theButton2.setAttribute("value", "Live...(investigate)")
+  theButton2.setAttribute("class", "button2")
+  theButton2.setAttribute("onclick", "location.href='choixperso.html'")
+  document.body.appendChild(theButton2)
+
+  let flash1 = document.createElement("div")
+  flash1.setAttribute("class","bg")
+  document.body.appendChild(flash1)
+
+  let flash2 = document.createElement("div")
+  flash2.setAttribute("class","lightning flashit")
+  document.body.appendChild(flash2)
+
+  // document.body.style.backgroundImage="url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)"
+  document.getElementById("couleur").style.color="#FF0000"
+
+  let video1 = document.createElement("iframe")
+  video1.setAttribute("width","1")
+  video1.setAttribute("height","1")
+  video1.setAttribute("src","https://www.youtube.com/embed/wLlut9sqkR0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1")
+  video1.setAttribute("frameborder","0")
+  video1.setAttribute("allow","autoplay; encrypted-media")
+  video1.setAttribute("allowfullscreen","false")
+  document.body.appendChild(video1)
 
 
-    <body>
-      <header>
-
-        <div class="row">
-        	<div class="col-12 col-lg-12 d-flex justify-content-center belzebuth">
-        		<h1>
-            	BELZEBUTH CANAAN PHOTOGRAPHY
-        		</h1>
-        	</div>
-        </div>
-
-            <!-- HEADER NAV -->
-
-        <nav id="menu" class="navbar navbar-toggleable-md navbar-light bg-faded">
-
-          <a class="navbar-brand" href="#"> <span class="logoWhite">logo</span>
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupp" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-5">
-                <li class="nav-item active">
-                    <a class="nav-item nav-link" href="index.html">Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item nav-link" href="Gabandonne.html">Paris abandonné
-                    </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="Gaudela.html">Au-delà de Paris</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="Gvoies.html">Paris sans voies</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link last_link" href="contact.html">Contact</a>
-                </li>
-                </div>
-             </div>
-      </nav>
-		<!--navbar-->
-
-      </header>
-
-
-<!--Carousel-->
-
-<div class="container-fluid " id="rourou">
-<div id="demo" class="carousel slide"  data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img rounded mx-auto d-bloc src="caroussel1.jpg" alt="Los Angeles">
-    </div>
-    <div class="carousel-item">
-      <img src="caroussel2-1.jpg" alt="Chicago">
-    </div>
-    <div class="carousel-item">
-      <img src="caroussel3-1.jpg" alt="New York">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-
-</div>
-
-<!--Carousel-->
-<!--gallery shortcuts Alex version-->
-
-<!--gallery shortcuts Alex version-->
-
-  <div class="container-fluid d-flex" id="intros2">
-
-          <div class="row d-flex justify-content-center gallery_product"> <!-- start of Row -->
-
-            <div class="col-md-3 col-12 container_image">
-              <figure>
-                <div class="hovereffect">
-                    <img src="https://image.noelshack.com/fichiers/2018/10/5/1520603402-audela.jpg" class="figure-img img-fluid d-block rounded image image" alt="Image Gallery">
-                    <div class="overlay">
-                      <h2></h2>
-                        <p>
-                          <a href="Gabandonne.html"> PARIS ABANDONNÉ </a>
-                        </p>
-                    </div>
-                  </div>
-                  <figcaption class= "figure-caption text-justify"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, l'ue vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. À nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae en diem certam indicere. Cras mattis iudicium purus sit amet fermentum. </figcaption>
-                </figure>
-            </div>
-
-             <div class="col-md-3 col-12 container_image">
-              <figure>
-                <div class="hovereffect">
-                  <!-- <a href="Gabandonne.html"> -->
-                      <img src="https://image.noelshack.com/fichiers/2018/10/5/1520602949-home-abandonne.jpg" class="figure-img img-fluid d-block rounded image image" alt="Image Gallery">
-                    <!-- </a> -->
-                      <div class="overlay">
-                        <h2></h2>
-                  <p>
-                    <a href="Gaudela.html">AU-DELÀ DE PARIS</a>
-                  </p>
-                    </div>
-                  </div>    
-                  <figcaption class= "figure-caption text-justify"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, l'ue vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. À nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae en diem certam indicere. Cras mattis iudicium purus sit amet fermentum. </figcaption>
-                </figure>
-            </div>
-
-            <div class="col-md-3 col-12 container_image">
-              <figure>
-                <div class="hovereffect">
-                    <img src="https://image.noelshack.com/fichiers/2018/10/5/1520603198-paristransport.jpg" class="figure-img img-fluid d-block rounded image image" alt="Image Gallery">
-                    <div class="overlay">
-                      <h2></h2>
-                        <p>
-                          <a href="Gvoies.html"> PARIS SANS VOIES </a>
-                        </p>
-                    </div>
-                </div>
-                  <figcaption class= "figure-caption text-justify"> Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, l'ue vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. À nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae en diem certam indicere. Cras mattis iudicium purus sit amet fermentum. </figcaption>
-                </figure>
-            </div>
-          </div>
-      </div> <!-- end of Row -->
-<!--Footer-->
-<footer>
-    <div class="container-fluid">
-
-        <!--First row-->
-        <div class="row centering">
-
-                    <!--Facebook-->
-                    <div class="col-1 offset-4">
-                    <a class="fb-ic">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                  </div>
-                  <div class="col-1">
-                    <!--Twitter-->
-                    <a class="tw-ic">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                  </div>
-                    <!--Instagram-->
-                    <div class="col-1">
-                    <a class="ins-ic">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                  </div>
-                    <!--Pinterest-->
-                    <div class="col-1">
-                    <a class="pin-ic">
-                       <i class="fab fa-pinterest"></i>
-                    </a>
-                  </div>
-                  	 <!--Linkedin-->  	
-                    <div class="col-1">
-                    <a class="link-ic">
-						<i class="fab fa-linkedin"></i>
-                    </a>
-                  </div>
-
-            </div>
-            <!--/First column-->
-        </div>
-      
-    <!--Second row-->
-    <div class="row">
-      <div class="col-12 text-center copy color">
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
-    </div>
-  </div>
-    <!--/Copyright-->
-</div>
-</footer>
-<!--/Footer--> 
-
-<!--galery shortcuts Alex END-->
+/*  <iframe width="361" height="25" src="https://www.youtube.com/embed/wLlut9sqkR0?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="false"></iframe>*/
 
 
 
-      </body>
+  // document.getElementById("bg").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
+  // document.getElementById("lightning").setAttribute("background", "url(https://media.giphy.com/media/NARhtERAbRbkQ/giphy.gif)")
+
+}
+
+const video2 = () =>{
+  let video2 = document.createElement("iframe")
+  video2.setAttribute("width","1")
+  video2.setAttribute("height","1")
+  video2.setAttribute("src","https://www.youtube.com/embed/vhSHXGM7kgE?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1")
+  video2.setAttribute("frameborder","0")
+  video2.setAttribute("allow","autoplay; encrypted-media")
+  video2.setAttribute("allowfullscreen","false")
+  document.body.appendChild(video2)
+
+}
+
+test()
+const test3 = () => {
+  setTimeout(test2,32000)
+  setTimeout(video2,37000)
+}
+
+test3()
+
+
+
+
+    </script>
+
+
+  </body>
 </html>
